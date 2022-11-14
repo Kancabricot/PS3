@@ -4490,6 +4490,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Pointill\xE9 (6)"
       objectReference: {fileID: 0}
+    - target: {fileID: 918017345409629223, guid: 8dffa870a0738ce458270caed58ce462, type: 3}
+      propertyPath: m_TagString
+      value: Attach
+      objectReference: {fileID: 0}
     - target: {fileID: 7724839245403928484, guid: 8dffa870a0738ce458270caed58ce462, type: 3}
       propertyPath: m_RootOrder
       value: 6
