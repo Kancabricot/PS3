@@ -75,5 +75,11 @@ public class Grappin : MonoBehaviour
             isTaken = true;
         }
         isGoDown = false;
+        
+    }
+
+    public void Win()
+    {
+        speed += 0;
     }
 }

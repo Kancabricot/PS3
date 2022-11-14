@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     {
         Attach = GameObject.FindGameObjectsWithTag("Attach");
 
+
         if (Attach.Length == 0 && isWin == false)
         {
             isWin = true;

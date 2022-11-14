@@ -8,6 +8,7 @@ public class Statue : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("GGWP!");
+        FindObjectOfType<Grappin>().Win();
     }
 
 }
