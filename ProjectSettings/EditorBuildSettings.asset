@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 74a82951458907540b2631f3c25edb1a
+  - enabled: 1
+    path: Assets/Scenes/FishTheKing.unity
+    guid: 333207b4d63054e45a22f5097fb73b98
+  - enabled: 1
+    path: Assets/Scenes/MiniJeuDessin.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}

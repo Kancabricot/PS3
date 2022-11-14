@@ -135,8 +135,9 @@ GameObject:
   - component: {fileID: 104764724}
   - component: {fileID: 104764723}
   - component: {fileID: 104764722}
+  - component: {fileID: 104764725}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Draw Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -206,7 +207,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 104764723}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 104764725}
+        m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
+        m_MethodName: DrawButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &104764723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,6 +258,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 104764720}
   m_CullTransparentMesh: 1
+--- !u!114 &104764725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104764720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 734690b604c0a524a991c3de453bdc55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &279193611
 GameObject:
   m_ObjectHideFlags: 0
@@ -1012,8 +1037,9 @@ GameObject:
   - component: {fileID: 1527109142}
   - component: {fileID: 1527109141}
   - component: {fileID: 1527109140}
+  - component: {fileID: 1527109143}
   m_Layer: 5
-  m_Name: Button
+  m_Name: FishTheKing Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1083,7 +1109,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1527109141}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1527109143}
+        m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
+        m_MethodName: FishTheKingButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1527109141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1122,6 +1160,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1527109138}
   m_CullTransparentMesh: 1
+--- !u!114 &1527109143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527109138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 734690b604c0a524a991c3de453bdc55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1536111059
 GameObject:
   m_ObjectHideFlags: 0
