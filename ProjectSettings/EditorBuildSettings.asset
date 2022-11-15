@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MiniJeuDessin.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Tettris.unity
+    guid: 554baef1e96bb5c44984b04f701177fe
   m_configObjects: {}

@@ -6,16 +6,18 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] GameObject[] Attach;
 
-    private bool isWin = false;
+    private void OnMouseUp()
+    {
+
+        if (Attach.Length <= 15)
+        {
+         
+            Debug.Log("ggwp!");
+        }
+    }
+
     void Update()
     {
         Attach = GameObject.FindGameObjectsWithTag("Attach");
-
-
-        if (Attach.Length == 0 && isWin == false)
-        {
-            isWin = true;
-            Debug.Log("ggwp!");
-        }
     }
 }

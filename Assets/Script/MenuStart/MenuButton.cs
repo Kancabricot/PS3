@@ -16,4 +16,9 @@ public class MenuButton : MonoBehaviour
         SceneManager.LoadScene("MiniJeuDessin");
     }
 
+    public void TettrisButton()
+    {
+        SceneManager.LoadScene("Tettris");
+    }
+
 }

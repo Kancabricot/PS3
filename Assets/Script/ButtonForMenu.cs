@@ -7,10 +7,20 @@ public class ButtonForMenu : MonoBehaviour
 {
     public void FishTheKingToMenu()
     {
-        SceneManager.LoadScene("Menu");
+        CallMenu();
     }
 
     public void DrawToMenu()
+    {
+        CallMenu();
+    }
+
+    public void TettrisToMenu()
+    {
+        CallMenu();
+    }
+
+    private void CallMenu()
     {
         SceneManager.LoadScene("Menu");
     }

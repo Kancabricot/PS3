@@ -9,6 +9,7 @@ public class GamemanagerTettris : MonoBehaviour
 
     public void NewObject()
     {
-        //Instantiate(Cube, SpawnerTransform.position, transform.rotation);
+        Instantiate(Cube, SpawnerTransform.position, transform.rotation);
     }
+
 }

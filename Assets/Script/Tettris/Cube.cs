@@ -34,7 +34,11 @@ public class Cube : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        canMove = false;
-        FindObjectOfType<GamemanagerTettris>().NewObject();
+        if(canMove == true)
+        {
+            canMove = false;
+            FindObjectOfType<GamemanagerTettris>().NewObject();
+        }
+
     }
 }
