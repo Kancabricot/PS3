@@ -11,4 +11,14 @@ public class Statue : MonoBehaviour
         FindObjectOfType<Grappin>().Win();
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("touch something");
+        if (collision.gameObject.CompareTag("Grappin"))
+        {
+
+        GetComponent<HingeJoint>().connectedBody = collision.rigidbody;
+        }
+    }
+
 }
