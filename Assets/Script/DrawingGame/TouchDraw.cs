@@ -40,6 +40,7 @@ public class TouchDraw : MonoBehaviour
 
         while (true)
         {
+
             Vector3 position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             position.z = 0;
             line.positionCount++;
