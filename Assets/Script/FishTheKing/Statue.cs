@@ -8,7 +8,6 @@ public class Statue : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("GGWP!");
-        FindObjectOfType<Grappin>().Win();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -17,7 +16,7 @@ public class Statue : MonoBehaviour
         if (collision.gameObject.CompareTag("Grappin"))
         {
 
-        GetComponent<HingeJoint>().connectedBody = collision.rigidbody;
+        GetComponent<FixedJoint>().connectedBody = collision.rigidbody;
         }
     }
 

@@ -9,6 +9,7 @@ TagManager:
   - Goal
   - Floor
   - Line
+  - Grappin
   layers:
   - Default
   - TransparentFX
