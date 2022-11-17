@@ -6,6 +6,6 @@ public class ButtonGrab : MonoBehaviour
 {
     public void GrabButton()
     {
-        FindObjectOfType<Grappin>().ChangeDirection();
+        FindObjectOfType<ChainMovement>().ChangeDirection();
     }
 }

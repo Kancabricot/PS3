@@ -5,27 +5,29 @@ using UnityEngine;
 
 public class Grappin : MonoBehaviour
 {
-    private bool isGoDown = true;
-    [SerializeField] float speed = 5;
-    [SerializeField] float rotationSpeed = 5;
-    [SerializeField] CinemachineVirtualCamera vcam;
+    [SerializeField] GameObject gameOverMenu;
 
-    void Update()
+    private int life = 3;
+
+
+
+    private void OnCollisionEnter(Collision collision)
     {
-        if(isGoDown == true)
+        if (!collision.gameObject.CompareTag("Statue"))
         {
-            GetComponent<Rigidbody>().velocity = new Vector2(Input.acceleration.x * rotationSpeed, -speed);
-        }
-        else
-        {
-            GetComponent<Rigidbody>().velocity = new Vector2(Input.acceleration.x * rotationSpeed, speed);
+            DamageTaken(collision);
         }
     }
-    public void ChangeDirection()
-    {
-        isGoDown = false;
 
-        var transposer = vcam.GetCinemachineComponent<CinemachineFramingTransposer>();
-        transposer.m_TrackedObjectOffset = new Vector3 ( 0, 5, 0);
+
+
+    public void DamageTaken(Collision collision)
+    {
+        Destroy(collision.gameObject);
+        life -= 1;
+        if (life <= 0)
+        {
+            gameOverMenu.SetActive(true);
+        }
     }
 }

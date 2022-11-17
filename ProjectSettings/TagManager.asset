@@ -6,10 +6,10 @@ TagManager:
   tags:
   - Attach
   - Trash
-  - Goal
   - Floor
   - Line
   - Grappin
+  - Statue
   layers:
   - Default
   - TransparentFX
