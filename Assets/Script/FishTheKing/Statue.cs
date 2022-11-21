@@ -9,30 +9,18 @@ public class Statue : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-
-        Debug.Log("GGWP!");
-
         winMenu.SetActive(true);
-
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-
-
-        if (collision.gameObject.CompareTag("Grappin"))
-        {
-            GetComponent<FixedJoint>().connectedBody = collision.rigidbody;
-        }
-
         if (collision.gameObject.CompareTag("Grappin"))
         {
         GetComponent<FixedJoint>().connectedBody = collision.rigidbody;
         }
         else if(collision.gameObject.CompareTag("Trash"))
         {
-            //FindObjectOfType<Grappin>().DamageTaken(collision);
-
+            FindObjectOfType<Grappin>().DamageTaken(collision);
         }
     }
 
