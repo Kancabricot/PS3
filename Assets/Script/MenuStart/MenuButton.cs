@@ -18,7 +18,7 @@ public class MenuButton : MonoBehaviour
 
     public void TravelBoatButton()
     {
-        SceneManager.LoadScene("TravelBoat");
+        SceneManager.LoadScene("BoatTravel");
     }
 
 }
