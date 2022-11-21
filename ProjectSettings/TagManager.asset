@@ -3,17 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Attach
-  - Trash
-  - Floor
-<<<<<<< HEAD
-  - Grappin
-=======
-  - Line
-  - Grappin
-  - Statue
->>>>>>> d3633147aa16fff22c1487b9db9c7c1c5f27ba18
+  tags: []
   layers:
   - Default
   - TransparentFX

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Grappin : MonoBehaviour
 {
-<<<<<<< HEAD
+
     private bool isGoDown = true;
 
     [SerializeField] float speed = 5;
@@ -39,7 +39,6 @@ public class Grappin : MonoBehaviour
         Cam.GetComponent<CinemachineFramingTransposer>().m_TrackedObjectOffset.y = 5;
     }
 
-=======
     [SerializeField] GameObject gameOverMenu;
 
     private int life = 3;
@@ -65,5 +64,5 @@ public class Grappin : MonoBehaviour
             gameOverMenu.SetActive(true);
         }
     }
->>>>>>> d3633147aa16fff22c1487b9db9c7c1c5f27ba18
+
 }
