@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] GameObject[] Attach;
+    [SerializeField] GameObject[] attach;
+    [SerializeField] GameObject[] linetrace;
     [SerializeField] GameObject WinMenu;
     [SerializeField] GameObject FxDraw;
 
@@ -15,8 +16,13 @@ public class GameManager : MonoBehaviour
         FxDraw.SetActive(false);
         fingerDown = false;
 
-        if (Attach.Length <= 15)
+        if (attach.Length <= 15)
         {
+            for(int i = 0; i < linetrace.Length; i++)
+            {
+                Destroy(linetrace[i]);
+            }
+
             WinMenu.SetActive(true);
         }
 
@@ -30,7 +36,8 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        Attach = GameObject.FindGameObjectsWithTag("Attach");
+        attach = GameObject.FindGameObjectsWithTag("Attach");
+        linetrace = GameObject.FindGameObjectsWithTag("Line");
 
         if (fingerDown == true)
         {
