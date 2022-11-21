@@ -15,7 +15,7 @@ public class ButtonForMenu : MonoBehaviour
         CallMenu();
     }
 
-    public void TettrisToMenu()
+    public void TravelBoatToMenu()
     {
         CallMenu();
     }
