@@ -14,7 +14,7 @@ public class Wheel : MonoBehaviour
 
             if (screenTouch.phase == TouchPhase.Moved)
             {
-                transform.Rotate(0f, 0f, -screenTouch.deltaPosition.x);
+                transform.Rotate(screenTouch.deltaPosition.x , 0f, 0f);
             }
         }
     }       
