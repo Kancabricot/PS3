@@ -5,23 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class ButtonForMenu : MonoBehaviour
 {
-    public void FishTheKingToMenu()
-    {
-        CallMenu();
-    }
-
-    public void DrawToMenu()
-    {
-        CallMenu();
-    }
-
-    public void TravelBoatToMenu()
-    {
-        CallMenu();
-    }
-
-    private void CallMenu()
+    public void ToMenu()
     {
         SceneManager.LoadScene("Menu");
     }
+
 }
