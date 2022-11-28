@@ -449,7 +449,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &112170343
 Transform:
   m_ObjectHideFlags: 0
@@ -1567,7 +1567,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6a5c8076585cc264b8f77c64925e2423, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 33b7d08c849cdb2498d256160fa45b13, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2517,6 +2517,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 130443312}
     m_Modifications:
+    - target: {fileID: 19169413622868267, guid: ce34ac080bb384847bf8635d715e972d, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19169413622868267, guid: ce34ac080bb384847bf8635d715e972d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 33b7d08c849cdb2498d256160fa45b13, type: 3}
     - target: {fileID: 1472988219071760883, guid: ce34ac080bb384847bf8635d715e972d, type: 3}
       propertyPath: m_Name
       value: HomeButtonUI
@@ -2551,11 +2559,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5932253261385459164, guid: ce34ac080bb384847bf8635d715e972d, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 200
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 5932253261385459164, guid: ce34ac080bb384847bf8635d715e972d, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 200
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 5932253261385459164, guid: ce34ac080bb384847bf8635d715e972d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2587,7 +2595,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5932253261385459164, guid: ce34ac080bb384847bf8635d715e972d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 100
+      value: 48.1
       objectReference: {fileID: 0}
     - target: {fileID: 5932253261385459164, guid: ce34ac080bb384847bf8635d715e972d, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2603,6 +2611,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5932253261385459164, guid: ce34ac080bb384847bf8635d715e972d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680909247838754169, guid: ce34ac080bb384847bf8635d715e972d, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4659,7 +4671,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2bc57e9c0cd8b084d88b4ae0050cfecb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6e309c645002334419a8316a4eec8c94, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
