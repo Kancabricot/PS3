@@ -10,12 +10,15 @@ public class Cauldron : MonoBehaviour
     private float heat = 0;
 
     [SerializeField] GameObject aiguille;
+    [SerializeField] GameObject lever;
     [SerializeField] float looseCondition = 200;
     [SerializeField] float winCondition = 100;
+    private bool isHeatWin = false;
 
     private void Update()
     {
         aiguille.transform.eulerAngles = new Vector3( 0f, 0f, -heat);
+
         if(heat > 20)
         {
             heat -= 0.05f;
@@ -24,9 +27,12 @@ public class Cauldron : MonoBehaviour
         if(heat > 110 && heat < 150)
         {
 
-            if (winCondition < 0)
+            if (winCondition < 0 && isHeatWin == false)
             {
-                Debug.Log("win");
+                isHeatWin = true;
+                FindObjectOfType<Levier>().BegenningLever();
+                FindObjectOfType<Souffleur>().ExitMesh();
+
             }
             else
             {
@@ -44,9 +50,17 @@ public class Cauldron : MonoBehaviour
             }
         }
 
+        if(isHeatWin == true && lever.transform.position.y <= 0)
+        {
+            transform.eulerAngles = new Vector3( lever.transform.position.y * 20, 0f, 0f);
+        }
+
     }
     public void IncreaseHeat()
     {
         heat += 10;
+        //FindObjectOfType<Levier>().BegenningLever();
+        //FindObjectOfType<Souffleur>().ExitMesh();
+
     }
 }
