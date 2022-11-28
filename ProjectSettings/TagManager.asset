@@ -12,6 +12,8 @@ TagManager:
   - Statue
   - Obstacle
   - Hearth
+  - BronzeMelt
+  - DeadZone
   layers:
   - Default
   - TransparentFX

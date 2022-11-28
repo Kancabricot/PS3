@@ -6,6 +6,7 @@ using DG.Tweening;
 public class Souffleur : MonoBehaviour
 {
     [SerializeField] GameObject termo;
+    [SerializeField] GameObject mold;
 
     private void OnMouseDown()
     {
@@ -24,6 +25,9 @@ public class Souffleur : MonoBehaviour
                     .SetEase(Ease.OutQuad);
 
         termo.transform.DOMoveY(transform.position.x - 8, 1f, false)
+                    .SetEase(Ease.OutQuad);
+
+        mold.transform.DOMoveY(transform.position.x - 8, 1f, false)
                     .SetEase(Ease.OutQuad);
     }
 }

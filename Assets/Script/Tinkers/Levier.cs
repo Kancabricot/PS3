@@ -6,6 +6,7 @@ using DG.Tweening;
 public class Levier : MonoBehaviour
 {
     private bool isPokemon = false;
+    [SerializeField] GameObject menuWin;
 
     public void BegenningLever()
     {
@@ -24,6 +25,7 @@ public class Levier : MonoBehaviour
         isPokemon = false;
         transform.DOMoveY(transform.position.y - transform.position.y, 1f, false)
             .SetEase(Ease.OutQuad);
+        Invoke("CheckWin", 0.5f);
     }
 
     private void Update()
@@ -34,6 +36,14 @@ public class Levier : MonoBehaviour
             position.x = 0;
             position.z = 0;
             transform.transform.position = position;
+        }
+    }
+
+    private void CheckWin()
+    {
+        if(FindObjectOfType<Mold>().IsWin() == true)
+        {
+            menuWin.SetActive(true);
         }
     }
 }
