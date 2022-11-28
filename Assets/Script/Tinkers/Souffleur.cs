@@ -27,7 +27,7 @@ public class Souffleur : MonoBehaviour
         termo.transform.DOMoveY(transform.position.x - 8, 1f, false)
                     .SetEase(Ease.OutQuad);
 
-        mold.transform.DOMoveY(transform.position.x - 8, 1f, false)
+        mold.transform.DOMoveY(-6.69f, 1f, false)
                     .SetEase(Ease.OutQuad);
     }
 }

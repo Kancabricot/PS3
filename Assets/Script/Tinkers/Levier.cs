@@ -45,5 +45,9 @@ public class Levier : MonoBehaviour
         {
             menuWin.SetActive(true);
         }
+        else if(FindObjectOfType<Cauldron>().CheckLoose() == true)
+        {
+            FindObjectOfType<Cauldron>().Loose();
+        }
     }
 }

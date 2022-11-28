@@ -13,6 +13,7 @@ public class Cauldron : MonoBehaviour
     [SerializeField] GameObject lever;
     [SerializeField] float looseCondition = 200;
     [SerializeField] float winCondition = 100;
+    [SerializeField] int BronzeIndex = 1089;
     private bool isHeatWin = false;
 
     private void Update()
@@ -42,7 +43,7 @@ public class Cauldron : MonoBehaviour
         {
             if (looseCondition < 0)
             {
-                menuGameOver.SetActive(true);
+                Loose();
             }
             else
             {
@@ -62,5 +63,31 @@ public class Cauldron : MonoBehaviour
         //FindObjectOfType<Levier>().BegenningLever();
         //FindObjectOfType<Souffleur>().ExitMesh();
 
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("BronzeMelt"))
+        {
+            BronzeIndex -= 1;
+
+        }
+    }
+
+    public bool CheckLoose()
+    {
+        if(BronzeIndex <= 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public void Loose()
+    {
+        menuGameOver.SetActive(true);
     }
 }
