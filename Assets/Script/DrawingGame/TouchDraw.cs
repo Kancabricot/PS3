@@ -42,6 +42,7 @@ public class TouchDraw : MonoBehaviour
         {
 
             Vector3 position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Debug.Log(position);
             position.z = 0;
             line.positionCount++;
             line.SetPosition(line.positionCount-1,position);
