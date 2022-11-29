@@ -14,6 +14,9 @@ GameObject:
   - component: {fileID: 207305191125217}
   - component: {fileID: 207305191125221}
   - component: {fileID: -8142150701183185671}
+  - component: {fileID: -5344893804667709653}
+  - component: {fileID: 9193862214656069523}
+  - component: {fileID: -1772680511277369474}
   m_Layer: 0
   m_Name: LiquidParts
   m_TagString: BronzeMelt
@@ -127,3 +130,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f31cb89c328d03458db9a76cca1b84d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &-5344893804667709653
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207305191125219}
+  m_Material: {fileID: 13400000, guid: ff8e86f511c221f41963985d37fbed71, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!135 &9193862214656069523
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207305191125219}
+  m_Material: {fileID: 13400000, guid: ff8e86f511c221f41963985d37fbed71, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!135 &-1772680511277369474
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207305191125219}
+  m_Material: {fileID: 13400000, guid: ff8e86f511c221f41963985d37fbed71, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}

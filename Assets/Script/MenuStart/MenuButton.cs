@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuButton : MonoBehaviour
 {
+    [SerializeField] GameObject levelSelection;
 
     public void FishTheKingButton()
     {
@@ -19,6 +20,21 @@ public class MenuButton : MonoBehaviour
     public void TravelBoatButton()
     {
         SceneManager.LoadScene("BoatTravel");
+    }
+
+    public void MeltStatue()
+    {
+        SceneManager.LoadScene("TinkerConstruct");
+    }
+
+    public void OpenLevelSelector()
+    {
+        levelSelection.SetActive(true);
+    }
+
+    public void CloseLevelSelector()
+    {
+        levelSelection.SetActive(false);
     }
 
 }
