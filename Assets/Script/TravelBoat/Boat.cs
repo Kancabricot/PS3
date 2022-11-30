@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Boat : MonoBehaviour
 {
-    [SerializeField] float speed = 5;
+    [SerializeField] float speed = 0;
     private Vector3 test;
     [SerializeField] GameObject wheel;
 
@@ -81,5 +81,10 @@ public class Boat : MonoBehaviour
             speed = 0;
             menuLoose.SetActive(true);
         }
+    }
+
+    public void OnStartGame()
+    {
+        speed = 5;
     }
 }
