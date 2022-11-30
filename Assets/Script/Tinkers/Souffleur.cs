@@ -7,6 +7,7 @@ public class Souffleur : MonoBehaviour
 {
     [SerializeField] GameObject termo;
     [SerializeField] GameObject mold;
+    [SerializeField] GameObject bar;
 
     private void OnMouseDown()
     {
@@ -25,6 +26,9 @@ public class Souffleur : MonoBehaviour
                     .SetEase(Ease.OutQuad);
 
         termo.transform.DOMoveY(transform.position.x - 8, 1f, false)
+                    .SetEase(Ease.OutQuad);
+
+        bar.transform.DOMoveY(transform.position.x + 8, 1f, false)
                     .SetEase(Ease.OutQuad);
 
         mold.transform.DOMoveY(-6.69f, 1f, false)

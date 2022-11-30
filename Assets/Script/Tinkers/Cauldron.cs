@@ -57,6 +57,8 @@ public class Cauldron : MonoBehaviour
             //GetComponent<Rigidbody>().angularVelocity = new Vector3(lever.transform.position.y * 20, 0f, 0f);
         }
 
+        FindObjectOfType<Bar>().Increase(winCondition);
+
     }
     public void IncreaseHeat()
     {
