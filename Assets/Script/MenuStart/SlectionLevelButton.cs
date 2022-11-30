@@ -20,11 +20,14 @@ public class SlectionLevelButton : MonoBehaviour
     [SerializeField] GameObject left;
     [SerializeField] GameObject play;
 
+    [SerializeField] AudioClip buttonSFX;
+
     public static int IndexChoice = 1;
 
     public void GoRight()
     {
-        if(group.transform.eulerAngles.y %45 == 0)
+
+        if(group.transform.eulerAngles.y %90 <= 0.1 && group.transform.eulerAngles.y % 90 >= -0.1)
         {
             IndexChoice += 1;
             if(IndexChoice == 5)
@@ -36,16 +39,19 @@ public class SlectionLevelButton : MonoBehaviour
             .SetEase(Ease.OutBack);
         }
         
+        GetComponent<AudioSource>().PlayOneShot(buttonSFX);
+        
     }
     public void GoLeft()
     {   
-        if(group.transform.eulerAngles.y % 45 == 0)
+        if(group.transform.eulerAngles.y % 90 <= 0.1 && group.transform.eulerAngles.y % 90 >= -0.1)
         {
             IndexChoice -= 1;
             group.transform.DORotate(new Vector3(0, group.transform.eulerAngles.y - 90, 0), 1.5f, RotateMode.FastBeyond360)
             .SetDelay(0.5f)
             .SetEase(Ease.OutBack);
         }
+        GetComponent<AudioSource>().PlayOneShot(buttonSFX);
     }
 
     public void Play()
