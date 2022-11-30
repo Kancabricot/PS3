@@ -8,7 +8,7 @@ public class ChainMovement : MonoBehaviour
     [SerializeField] CinemachineVirtualCamera vcam;
 
     private bool isGoDown = true;
-    [SerializeField] float speed = 5;
+    [SerializeField] float speed = 0;
     [SerializeField] float rotationSpeed = 5;
 
     void Update()
@@ -21,6 +21,12 @@ public class ChainMovement : MonoBehaviour
         {
             GetComponent<Rigidbody>().velocity = new Vector2(Input.acceleration.x * rotationSpeed, speed);
         }
+    }
+
+    public void StartGame()
+    {
+        speed = 5;
+        GetComponent<Rigidbody>().isKinematic = false;
     }
 
     public void ChangeDirection()
