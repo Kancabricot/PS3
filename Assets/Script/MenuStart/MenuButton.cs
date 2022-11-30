@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class MenuButton : MonoBehaviour
 {
     [SerializeField] GameObject levelSelection;
+    [SerializeField] GameObject Menu;
 
     public void FishTheKingButton()
     {
@@ -37,4 +38,13 @@ public class MenuButton : MonoBehaviour
         levelSelection.SetActive(false);
     }
 
+    public void CloseMenu()
+    {
+        Menu.SetActive(false);
+    }
+
+    public void OpenMenu()
+    {
+        Menu.SetActive(true);
+    }
 }
