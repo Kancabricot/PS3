@@ -4,11 +4,8 @@ using UnityEngine;
 
 public class TutoCanvas : MonoBehaviour
 {
-    [SerializeField] GameObject tuto;
-
-
-    public void OnclickTuto()
+    private void OnMouseDown()
     {
-        Destroy(tuto);
+        Destroy(gameObject);
     }
 }
