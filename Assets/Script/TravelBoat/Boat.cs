@@ -5,7 +5,7 @@ using UnityEngine;
 public class Boat : MonoBehaviour
 {
     [SerializeField] float speed = 0;
-    private Vector3 test;
+    private Vector3 velocityBoat;
     [SerializeField] GameObject wheel;
 
     [SerializeField] float cooldownManager = 200;
@@ -25,7 +25,7 @@ public class Boat : MonoBehaviour
 
     void Update()
     {
-        test = transform.forward * speed;
+        velocityBoat = transform.forward * speed;
 
         hearth = GameObject.FindGameObjectsWithTag("Hearth");
 
@@ -46,7 +46,7 @@ public class Boat : MonoBehaviour
 
     private void FixedUpdate()
     {
-        GetComponent<Rigidbody>().velocity = test;
+        GetComponent<Rigidbody>().velocity = velocityBoat;
 
         //transform.eulerAngles = wheel.transform.eulerAngles;
         transform.eulerAngles = new Vector3(0, wheel.transform.localEulerAngles.y, 0);
