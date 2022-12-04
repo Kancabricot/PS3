@@ -49,7 +49,7 @@ public class Boat : MonoBehaviour
         GetComponent<Rigidbody>().velocity = velocityBoat;
 
         //transform.eulerAngles = wheel.transform.eulerAngles;
-        transform.eulerAngles = new Vector3(0, wheel.transform.localEulerAngles.y, 0);
+        transform.eulerAngles = new Vector3(0, -wheel.transform.localEulerAngles.z, 0);
 
     }
 
@@ -87,4 +87,5 @@ public class Boat : MonoBehaviour
     {
         speed = 5;
     }
+
 }
