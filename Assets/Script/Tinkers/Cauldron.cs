@@ -68,12 +68,13 @@ public class Cauldron : MonoBehaviour
 
     }
 
-    private void OnTriggerExit(Collider other)
+
+    private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("BronzeMelt"))
         {
             BronzeIndex -= 1;
-
+            Debug.Log("-1");
         }
     }
 

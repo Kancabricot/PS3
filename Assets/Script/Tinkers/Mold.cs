@@ -13,7 +13,7 @@ public class Mold : MonoBehaviour
         bronzeMelt = GameObject.FindGameObjectsWithTag("BronzeMelt");
         Debug.Log(bronzeMelt.Length);
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("BronzeMelt"))
         {
