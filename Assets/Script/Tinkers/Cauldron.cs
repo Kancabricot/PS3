@@ -53,7 +53,7 @@ public class Cauldron : MonoBehaviour
 
         if(isHeatWin == true && lever.transform.position.y <= 0)
         {
-            transform.eulerAngles = new Vector3( lever.transform.position.y * 20, 0f, 0f);
+            transform.eulerAngles = new Vector3( 0f, 0f, lever.transform.position.y * 30);
             //GetComponent<Rigidbody>().angularVelocity = new Vector3(lever.transform.position.y * 20, 0f, 0f);
         }
 

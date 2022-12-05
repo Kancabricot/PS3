@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Mold : MonoBehaviour
 {
-    [SerializeField] private int bronzeIndex = 0;
+    private int bronzeIndex = 0;
     private GameObject[] bronzeMelt;
 
 
