@@ -5,6 +5,7 @@ using UnityEngine;
 public class TouchDraw : MonoBehaviour
 {
     Coroutine drawing;
+    [SerializeField] GameObject burinMarteau;
 
     void Update()
     {
@@ -42,10 +43,11 @@ public class TouchDraw : MonoBehaviour
         {
 
             Vector3 position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
-            position.z = 0;
+            position.y += 1;
+            position.z = 1;
             line.positionCount++;
             line.SetPosition(line.positionCount-1,position);
+            burinMarteau.transform.position = new Vector3(position.x, position.y, 0);
             yield return null;
         }
     }

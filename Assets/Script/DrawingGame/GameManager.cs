@@ -7,13 +7,13 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject[] attach;
     [SerializeField] GameObject[] linetrace;
     [SerializeField] GameObject WinMenu;
-    [SerializeField] GameObject FxDraw;
+
 
     private bool fingerDown = false;
 
     private void OnMouseUp()
     {
-        FxDraw.SetActive(false);
+
         fingerDown = false;
 
         if (attach.Length <= 15)
@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
 
     private void OnMouseDown()
     {
-        FxDraw.SetActive(true);
+
         fingerDown = true;
     }
 
@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
         {
             Vector3 position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             position.z = 0;
-            FxDraw.gameObject.transform.position = position;
+
         }
     }
 }
