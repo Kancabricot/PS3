@@ -12,9 +12,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] float maxDistance;
 
 
-    private bool fingerDown = false;
-
-
     private void Start()
     {
         attach = GameObject.FindGameObjectsWithTag("Attach");
@@ -23,8 +20,6 @@ public class GameManager : MonoBehaviour
 
     private void OnMouseUp()
     {
-
-        fingerDown = false;
 
         if (attach.Length <= 15)
         {
