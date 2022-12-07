@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] GameObject[] attach;
     [SerializeField] GameObject[] linetrace;
     [SerializeField] GameObject WinMenu;
+    [SerializeField]  WinMenu;
 
 
     private bool fingerDown = false;
