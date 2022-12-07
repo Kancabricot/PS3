@@ -18,6 +18,8 @@ public class Boat : MonoBehaviour
     [SerializeField] GameObject menuLoose;
     [SerializeField] GameObject menuWin;
 
+    [SerializeField] private Transform savePoint;
+
     private void Start()
     {
         cooldown = cooldownManager;
@@ -25,6 +27,7 @@ public class Boat : MonoBehaviour
 
     void Update()
     {
+
         velocityBoat = transform.forward * speed;
 
         hearth = GameObject.FindGameObjectsWithTag("Hearth");
@@ -57,13 +60,17 @@ public class Boat : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Obstacle") && isDomagable == true)
         {
+            TP();
             life--;
             Destroy(hearth[0]);
             CheckLife();
             isDomagable=false;
-
         }
-        
+    }
+
+    private void TP()
+    {
+        transform.position = new Vector3(savePoint.transform.position.x, transform.position.y, savePoint.transform.position.z);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -71,6 +78,7 @@ public class Boat : MonoBehaviour
         if (other.gameObject.CompareTag("Finish"))
         {
             menuWin.SetActive(true);
+            speed = 0;
         }
     }
 

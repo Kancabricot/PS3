@@ -4920,7 +4920,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2198781428961906012, guid: 7518f31b680aa0243b61440a7e454749, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.5
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 2198781428961906012, guid: 7518f31b680aa0243b61440a7e454749, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6440,7 +6440,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 376361541}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.5, y: -5.17, z: -3.209999}
+  m_LocalPosition: {x: -0.15, y: -5.17, z: -3.209999}
   m_LocalScale: {x: 1, y: 0.71865183, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8391,6 +8391,57 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &493301696
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 493301698}
+  - component: {fileID: 493301697}
+  m_Layer: 0
+  m_Name: PivotCauldron
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &493301697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493301696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06b555fefe0fe9647b49cbbd6dd2b359, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuGameOver: {fileID: 1020883704}
+  aiguille: {fileID: 20843280}
+  lever: {fileID: 1479821038}
+  looseCondition: 5
+  winCondition: 1
+  BronzeIndex: 287
+--- !u!4 &493301698
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493301696}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.81, y: 0.17, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1839263380}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &498275131
 GameObject:
   m_ObjectHideFlags: 0
@@ -8457,7 +8508,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &527418049
 GameObject:
@@ -21144,7 +21195,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1146423853}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.01, y: -9.74, z: 0}
+  m_LocalPosition: {x: -1.16, y: -9.74, z: 0}
   m_LocalScale: {x: 16.90122, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -21405,14 +21456,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1151971491}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: -0.93, y: -5.85, z: 0}
+  m_LocalPosition: {x: -2.78, y: -5.85, z: 0}
   m_LocalScale: {x: 0.25754, y: 0.25754, z: 0.25754}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 20843281}
   - {fileID: 911811524}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 180}
 --- !u!1 &1154832875
 GameObject:
@@ -34067,7 +34118,6 @@ GameObject:
   - component: {fileID: 1839263380}
   - component: {fileID: 1839263379}
   - component: {fileID: 1839263378}
-  - component: {fileID: 1839263381}
   - component: {fileID: 1839263382}
   m_Layer: 0
   m_Name: Cauldron
@@ -34161,35 +34211,17 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1839263377}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.8, y: -1.26, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.00999999, y: -1.43, z: 0}
   m_LocalScale: {x: 16.90122, y: 1.1596, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 401323182}
   - {fileID: 217382421}
   - {fileID: 560421056}
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 493301698}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1839263381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1839263377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06b555fefe0fe9647b49cbbd6dd2b359, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menuGameOver: {fileID: 1020883704}
-  aiguille: {fileID: 20843280}
-  lever: {fileID: 1479821038}
-  looseCondition: 5
-  winCondition: 1
-  BronzeIndex: 287
 --- !u!61 &1839263382
 BoxCollider2D:
   m_ObjectHideFlags: 0
