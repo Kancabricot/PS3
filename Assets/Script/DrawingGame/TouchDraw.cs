@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class TouchDraw : MonoBehaviour
 {
@@ -31,6 +32,7 @@ public class TouchDraw : MonoBehaviour
     void FinishLine()
     {
         StopCoroutine(drawing);
+        burinMarteau.transform.position = new Vector3(-8.26f, 0, 3.02f);
     }
 
     IEnumerator DrawLine()

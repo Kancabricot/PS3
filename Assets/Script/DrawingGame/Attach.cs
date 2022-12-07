@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class Attach : MonoBehaviour
 {
-    private void OnMouseOver()
+    private void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);
+        if (other.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

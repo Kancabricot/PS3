@@ -6827,9 +6827,10 @@ GameObject:
   m_Component:
   - component: {fileID: 427213210}
   - component: {fileID: 427213211}
+  - component: {fileID: 427213212}
   m_Layer: 0
   m_Name: Burin
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6901,6 +6902,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &427213212
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427213209}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2009749, y: 0.34228858, z: 20.20166}
+  m_Center: {x: -0.86451375, y: 0.44385597, z: 10.000832}
 --- !u!1001 &444078868
 PrefabInstance:
   m_ObjectHideFlags: 0
