@@ -1,14 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] GameObject[] attach;
     [SerializeField] GameObject[] linetrace;
-    [SerializeField] GameObject WinMenu;
-    [SerializeField]  WinMenu;
+    [SerializeField] GameObject winMenu;
 
 
     private bool fingerDown = false;
@@ -25,27 +23,16 @@ public class GameManager : MonoBehaviour
                 Destroy(linetrace[i]);
             }
 
-            WinMenu.SetActive(true);
+            winMenu.SetActive(true);
+            FindObjectOfType<TouchDraw>().DesactiveDraw();
         }
 
     }
 
-    private void OnMouseDown()
-    {
-
-        fingerDown = true;
-    }
 
     void Update()
     {
         attach = GameObject.FindGameObjectsWithTag("Attach");
         linetrace = GameObject.FindGameObjectsWithTag("Line");
-
-        if (fingerDown == true)
-        {
-            Vector3 position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            position.z = 0;
-
-        }
     }
 }

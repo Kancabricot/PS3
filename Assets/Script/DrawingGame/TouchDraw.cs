@@ -1,16 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UIElements;
+
+using UnityEngine.UI;
 
 public class TouchDraw : MonoBehaviour
 {
     Coroutine drawing;
-    [SerializeField] GameObject burinMarteau;
+    [SerializeField] GameObject burinMarteau; 
+    [SerializeField] Image burin;
+    [SerializeField] float maxDistance;
+
+    private float distanceDo = 0;
+    private bool canDraw = true;
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && canDraw == true)
         {
             StartLine();
         }
@@ -18,6 +25,12 @@ public class TouchDraw : MonoBehaviour
         {
             FinishLine();
         }
+        burin.fillAmount = distanceDo / maxDistance;
+    }
+
+    public void DesactiveDraw()
+    {
+        canDraw = false;
     }
 
     void StartLine()
@@ -50,6 +63,7 @@ public class TouchDraw : MonoBehaviour
             line.positionCount++;
             line.SetPosition(line.positionCount-1,position);
             burinMarteau.transform.position = new Vector3(position.x, position.y, 0);
+            distanceDo += Time.deltaTime;
             yield return null;
         }
     }
