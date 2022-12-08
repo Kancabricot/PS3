@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject[] attach;
     [SerializeField] GameObject[] linetrace;
     [SerializeField] GameObject winMenu;
+    [SerializeField] GameObject barCompletion;
+    [SerializeField] GameObject barLooseCondition;
     [SerializeField] Image bar;
     [SerializeField] float maxDistance;
 
@@ -29,6 +31,8 @@ public class GameManager : MonoBehaviour
             }
 
             winMenu.SetActive(true);
+            barCompletion.SetActive(false);
+            barLooseCondition.SetActive(false);
             FindObjectOfType<TouchDraw>().DesactiveDraw();
         }
 

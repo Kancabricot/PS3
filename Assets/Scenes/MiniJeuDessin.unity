@@ -19761,7 +19761,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 335.36, y: 324.19995}
+  m_AnchoredPosition: {x: 359.4, y: 324.19995}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!1001 &1146324735
@@ -25675,6 +25675,8 @@ MonoBehaviour:
   attach: []
   linetrace: []
   winMenu: {fileID: 112170342}
+  barCompletion: {fileID: 1128527858}
+  barLooseCondition: {fileID: 274083116}
   bar: {fileID: 567048147}
   maxDistance: 0
 --- !u!65 &1549583699
