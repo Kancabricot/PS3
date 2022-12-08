@@ -33,7 +33,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: New Material
+  m_Name: FluidMaterial
   m_Shader: {fileID: -6465566751694194690, guid: c696ef0720f8d2c4db7bd4c80d18e47b, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -71,7 +71,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTexture:
-        m_Texture: {fileID: 8400000, guid: f0239b72d60bc71438b308d9eeb08af4, type: 2}
+        m_Texture: {fileID: 8400000, guid: fe627b81308674e4a86818d545ccc5b4, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
