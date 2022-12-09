@@ -23,7 +23,7 @@ public class Grappin : MonoBehaviour
 
     public void DamageTaken(Collision collision)
     {
-        Destroy(collision.gameObject);
+        //Destroy(collision.gameObject);
         life -= 1;
         if (life <= 0)
         {
