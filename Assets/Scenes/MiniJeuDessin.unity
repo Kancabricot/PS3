@@ -27469,7 +27469,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   burinMarteau: {fileID: 1869712133}
   burin: {fileID: 816137684}
-  maxDistance: 50
+  maxDistance: 70
 --- !u!4 &2055829816
 Transform:
   m_ObjectHideFlags: 0

@@ -58,8 +58,8 @@ public class TouchDraw : MonoBehaviour
         {
 
             Vector3 position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            position.y += 1;
-            position.z = 1;
+            position.y += 0.2f;
+            position.z = 0.2f;
             line.positionCount++;
             line.SetPosition(line.positionCount-1,position);
             burinMarteau.transform.position = new Vector3(position.x, position.y, 0);
