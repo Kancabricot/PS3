@@ -5412,7 +5412,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &569197368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12034,6 +12034,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tuto
       objectReference: {fileID: 0}
+    - target: {fileID: 2198781428961906008, guid: 7518f31b680aa0243b61440a7e454749, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2198781428961906012, guid: 7518f31b680aa0243b61440a7e454749, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -12213,6 +12217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1159179628}
   - component: {fileID: 1159179629}
+  - component: {fileID: 1159179630}
   m_Layer: 0
   m_Name: carte 1
   m_TagString: Untagged
@@ -12288,6 +12293,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1159179630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159179627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cdeb7b36bf96d44fa82df1e189c8a96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownManager: 3
+  HUD: {fileID: 569197367}
+  TUTO: {fileID: 1989541618}
 --- !u!1 &1349967912
 GameObject:
   m_ObjectHideFlags: 0
@@ -13076,7 +13096,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 735913753}
-  m_PlaneDistance: 1
+  m_PlaneDistance: 10.47
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
